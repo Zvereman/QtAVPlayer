@@ -98,6 +98,7 @@ macos|darwin {
 win32 {
     PRIVATE_HEADERS += qavhwdevice_d3d11_p.h
     SOURCES += qavhwdevice_d3d11.cpp
+    LIBS += d3d11.lib opengl32.lib Gdi32.lib User32.lib
 }
 
 qtConfig(vdpau) {
