@@ -93,7 +93,7 @@ public:
 static int decode_interrupt_cb(void *ctx)
 {
     auto d = reinterpret_cast<QAVDemuxerPrivate *>(ctx);
-    QMutexLocker locker(&d->mutex);
+    //QMutexLocker locker(&d->mutex);
     return d ? int(d->abortRequest) : 0;
 }
 

@@ -112,7 +112,7 @@ Q_SIGNALS:
     void sourceChanged(const QString &url);
     void stateChanged(QAVPlayer::State newState);
     void mediaStatusChanged(QAVPlayer::MediaStatus status);
-    void errorOccurred(QAVPlayer::Error, const QString &str);
+    void errorOccurred(QAVPlayer::Error error, const QString &str);
     void durationChanged(qint64 duration);
     void seekableChanged(bool seekable);
     void speedChanged(qreal rate);
